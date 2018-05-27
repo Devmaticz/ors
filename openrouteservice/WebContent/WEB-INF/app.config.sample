@@ -3,8 +3,8 @@
 	        # The topmost element to provide basic information about the service for signing and information purposes
 	    info: {
             base_url: "https://go.openrouteservice.org/",
-            support_mail: "support@openrouteservice.org",
-            author_tag: "openrouteservice",
+            support_mail: "support@augmentedteematics.com",
+            author_tag: "augmentedrouteservice",
             content_licence: "Apache License 2.0"
 	    }
 	        # The element for parameterization of the ORS end-points such as Routing, Geocoding, Isochrones, etc.
@@ -39,7 +39,7 @@
 				],
 	        	        maximum_locations: 2,
 	        	        route_details_allowed: true,
-	        	        attribution: "openrouteservice.org, OpenStreetMap contributors"
+	        	        attribution: "augmentedtelematics.com, Augmented Telematics"
 	    	        }
 			# ********************************************************************************************************************
 			# Matrix API end-point parameters			
@@ -59,7 +59,7 @@
                                 maximum_visited_nodes: 100000,
 				# Specifies whether the name of a neares street to the location can be resolved or not. Default value is true.
                                 allow_resolve_locations: true,
-                                attribution: "openrouteservice.org, OpenStreetMap contributors"
+                                attribution: "augmentedtelematics.com, Augmented Telematics"
                         }
 			# ********************************************************************************************************************
 			# Optimization API end-point parameters
@@ -73,7 +73,7 @@
                                 solver_options: 
                                 { 
                                 },
-                                attribution: "openrouteservice.org, OpenStreetMap contributors"
+                                attribution: "augmentedtelematics.com, Augmented Telematics"
                         } 
 			# ********************************************************************************************************************
 			# MapMatching API end-point parameters
@@ -85,7 +85,7 @@
                                 maximum_locations: 100,
                                 maximum_search_radius: 200,
                                 maximum_visited_nodes: 10000,
-                                attribution: "openrouteservice.org, OpenStreetMap contributors"
+                                attribution: "augmentedtelematics.com, Augmented Telematics"
                         }
 			# ********************************************************************************************************************
 			# Isochrones API end-point parameters
@@ -129,7 +129,7 @@
                         property_mapping: {
                             "total_pop":"total_pop", "total_area_km":"total_area_km", "YOUR_MAPPING":"YOUR_MAPPING"
                         },
-				    attribution: "openrouteservice.org, OpenStreetMap contributors"
+				    attribution: "augmentedtelematics.com, Augmented Telematics"
 			        }
 			}
 			# ********************************************************************************************************************
@@ -148,7 +148,7 @@
                                 response_limit: 20,
 				#  Sets the value of the User-agent HTTP header sent to a backend.
                                 user_agent: OpenRouteService,
-                                attribution: "openrouteservice.org, OpenStreetMap contributors"
+                                attribution: "augmentedtelematics.com, Augmented Telematics"
                         }
 			# ********************************************************************************************************************
 			# Locations API end-point parameters
@@ -179,7 +179,7 @@
 				maximum_search_radius_for_points: 50000,
 				maximum_search_radius_for_linestrings: 2000,
 				maximum_search_radius_for_polygons: 1000,
-				attribution: "openrouteservice.org, OpenStreetMap contributors"
+				attribution: "augmentedtelematics.com, Augmented Telematics"
 			}
 			# ********************************************************************************************************************
 			# Routing API end-point parameters
@@ -195,7 +195,7 @@
 				sources: ["openrouteservice/src/main/files/heidelberg.osm.gz"],
 				# The number of threads used to initialize (build/load) graphs. Higher numbers requires more RAM.
 				init_threads: 2,
-				attribution: "openrouteservice.org, OpenStreetMap contributors",
+				attribution: "augmentedtelematics.com, Augmented Telematics",
 				# Defines a set of routing profiles.
 				profiles: {
 				        # Defines a list of active routing profiles. The element name XXX must correspond to a notation "profile-XXX", which is used in the following sections.
