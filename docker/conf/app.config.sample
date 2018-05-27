@@ -6,29 +6,29 @@
 				user_name: YOUR_USER,
 				user_password: YOUR_PASSWORD,
 				api_key: YOUR_API_KEY,
-				attribution: "openrouteservice.org, OpenStreetMap contributors"
+				attribution: "augmentedtelematics.com, Augmented Telematics"
 			}
 			accessibility: {
 	        	enabled: true,
-	        	maximum_range_distance: 120000,
+	        	maximum_range_distance: 200000,
 	        	maximum_range_time: 3600,
 	        	maximum_locations: 2,
 	        	route_details_allowed: true,
-	        	attribution: "openrouteservice.org, OpenStreetMap contributors"
+	        	attribution: "augmentedtelematics.com, Augmented Telematics"
 	    	}			
         	matrix: {
         	    enabled: true,
                 maximum_locations: 200,
 				maximum_visited_nodes: 100000,
                	allow_resolve_locations: true,
-                attribution: "openrouteservice.org, OpenStreetMap contributors"
+                attribution: "augmentedtelematics.com, Augmented Telematics"
             }
             mapmatching: {
         	    enabled: true,
                 maximum_locations: 100,
                 maximum_search_radius: 200,
                 maximum_visited_nodes: 10000,
-                attribution: "openrouteservice.org, OpenStreetMap contributors"
+                attribution: "augmentedtelematics.com, Augmented Telematics"
             }
             
 			isochrones: {
@@ -47,7 +47,7 @@
 				maximum_intervals: 10,
 				maximum_locations: 2,
 				allow_compute_area: true,
-				attribution: "openrouteservice.org, OpenStreetMap contributors"
+				attribution: "augmentedtelematics.com, Augmented Telematics"
 			}
 			geocoding: {
             	enabled: true,
@@ -56,7 +56,7 @@
                 reverse_geocoding_url: "http://41.106.3.138:5002/v1/reverse",
                 response_limit: 20,
                 user_agent: openrouteservice.org,
-                attribution: "openrouteservice.org, OpenStreetMap contributors"
+                attribution: "augmentedtelematics.com, Augmented Telematics"
             }
 			locations: {
 				enabled: true,
@@ -79,14 +79,14 @@
 				maximum_search_radius_for_points: 50000,
 				maximum_search_radius_for_linestrings: 2000,
 				maximum_search_radius_for_polygons: 1000,
-				attribution: "openrouteservice.org, OpenStreetMap contributors"
+				attribution: "augmentedtelematics.com, Augmented Telematics"
 			}
 			routing: {
 				enabled: true,
 				mode: "normal",
 				sources: ["data/algeria-latest.osm.pbf"],
 				init_threads: 2,
-				attribution: "openrouteservice.org, OpenStreetMap contributors, tmc - BASt",
+				attribution: "augmentedtelematics.com, Augmented Telematics",
 				distance_approximation: true,
 				profiles: {
 					active: ["vehicles", "bike", "bike2", "pedestrian"],
