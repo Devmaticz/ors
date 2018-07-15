@@ -10,8 +10,8 @@
 			}
 			accessibility: {
 	        	enabled: true,
-	        	maximum_range_distance: 200000,
-	        	maximum_range_time: 3600,
+	        	maximum_range_distance: 1000000,
+	        	maximum_range_time: 7200,
 	        	maximum_locations: 2,
 	        	route_details_allowed: true,
 	        	attribution: "augmentedtelematics.com, Augmented Telematics"
@@ -36,13 +36,13 @@
 				# possible values for maximum_range_distance and maximum_range_time are an integer or a list of values specifically defined for each profile
 				maximum_range_distance: 
 				[ 
-				   { profiles: "any", value: 50000 }
-				   { profiles: "driving-car, driving-hgv", value: 100000 }
+				   { profiles: "any", value: 500000 }
+				   { profiles: "driving-car, driving-hgv", value: 500000 }
 				],
 				maximum_range_time: 
 				[ 
 				   { profiles: "any", value: 18000 }
-				   { profiles: "driving-car, driving-hgv", value: 3600 }
+				   { profiles: "driving-car, driving-hgv", value: 7200 }
 				],
 				maximum_intervals: 10,
 				maximum_locations: 2,
@@ -96,9 +96,9 @@
 						elevation_provider: cgiar,
 						elevation_cache_path: "data/cgiar_provider",
  	          		    instructions: true,
- 	          		    maximum_distance: 100000,
+ 	          		    maximum_distance: 1000000,
  	          		    maximum_segment_distance_with_dynamic_weights: 50000,
- 	          		    maximum_waypoints: 50
+ 	          		    maximum_waypoints: 90
 						
 						preparation:
 						{  
@@ -133,7 +133,7 @@
 						parameters: {
 						    encoder_flags_size: 4,
 						    encoder_options : "turn_costs=true|block_fords=false|maximum_grade_level=1,turn_costs=true|block_fords=false",
-                            maximum_distance: 100000,
+                            maximum_distance: 1000000,
                             elevation: true, 
 							preparation:
 							{  
