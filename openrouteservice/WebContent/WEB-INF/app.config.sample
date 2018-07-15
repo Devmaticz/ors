@@ -2,10 +2,10 @@
 	ors {
 	        # The topmost element to provide basic information about the service for signing and information purposes
 	    info: {
-            base_url: "https://go.openrouteservice.org/",
+            base_url: "https://www.augmentedtelematics.com/",
             support_mail: "support@augmentedteematics.com",
             author_tag: "augmentedrouteservice",
-            content_licence: "Apache License 2.0"
+            content_licence: "Proprietary"
 	    }
 	        # The element for parameterization of the ORS end-points such as Routing, Geocoding, Isochrones, etc.
 		services: {
@@ -30,12 +30,12 @@
 				maximum_range_distance: 
 				[ 
 				   { profiles: "any", value: 50000 }
-				   { profiles: "driving-car, driving-hgv", value: 100000 }
+				   { profiles: "driving-car, driving-hgv", value: 1000000 }
 				],
 				maximum_range_time: 
 				[ 
 				   { profiles: "any", value: 18000 }
-				   { profiles: "driving-car, driving-hgv", value: 3600 }
+				   { profiles: "driving-car, driving-hgv", value: 36000 }
 				],
 	        	        maximum_locations: 2,
 	        	        route_details_allowed: true,
@@ -96,13 +96,13 @@
 				# Possible values for maximum_range_distance and maximum_range_time are an integer or a list of values specifically defined for each profile.
 				maximum_range_distance: 
 				[ 
-				   { profiles: "any", value: 50000 }
-				   { profiles: "driving-car, driving-hgv", value: 100000 }
+				   { profiles: "any", value: 500000 }
+				   { profiles: "driving-car, driving-hgv", value: 1000000 }
 				],
 				maximum_range_time: 
 				[ 
-				   { profiles: "any", value: 18000 }
-				   { profiles: "driving-car, driving-hgv", value: 3600 }
+				   { profiles: "any", value: 7200 }
+				   { profiles: "driving-car, driving-hgv", value: 7200 }
 				],
 				# Maximum number of intervals/isochrones computed for each location.
 				maximum_intervals: 10,
@@ -257,7 +257,7 @@
 							encoder_flags_size: 8,
 							# List of options used by FlagEncoders.
 							encoder_options : "turn_costs=true|block_fords=false,turn_costs=true|block_fords=false,turn_costs=true|block_fords=false",
-                            				maximum_distance: 100000,
+                            				maximum_distance: 1000000,
                             				elevation: true, 
                                 			preparation: {  
 					        		min_network_size: 200,
