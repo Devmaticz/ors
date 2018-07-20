@@ -36,8 +36,8 @@
 				# possible values for maximum_range_distance and maximum_range_time are an integer or a list of values specifically defined for each profile
 				maximum_range_distance: 
 				[ 
-				   { profiles: "any", value: 500000 }
-				   { profiles: "driving-car, driving-hgv", value: 500000 }
+				   { profiles: "any", value: 1000000 }
+				   { profiles: "driving-car, driving-hgv", value: 1000000 }
 				],
 				maximum_range_time: 
 				[ 
@@ -97,7 +97,7 @@
 						elevation_cache_path: "data/cgiar_provider",
  	          		    instructions: true,
  	          		    maximum_distance: 1000000,
- 	          		    maximum_segment_distance_with_dynamic_weights: 50000,
+ 	          		    maximum_segment_distance_with_dynamic_weights: 500000,
  	          		    maximum_waypoints: 90
 						
 						preparation:
